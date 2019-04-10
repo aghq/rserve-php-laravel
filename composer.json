@@ -1,0 +1,26 @@
+{
+    "name": "aghq/rserve-php-laravel",
+    "description": "A laravel-friendly way to integrate cturbelin/rserve-php",
+    "type": "library",
+    "require": {
+        "cturbelin/rserve-php": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Fred Spooner",
+            "email": "fred@aghq.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AGHQ\\RservePHPLaravel\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AGHQ\\RservePHPLaravel\\Providers\\RservePHPLaravelServiceProvider"
+            ]
+        }
+    }
+}
