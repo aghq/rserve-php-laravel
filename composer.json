@@ -12,6 +12,9 @@
         }
     ],
     "autoload": {
+      "classmap": [
+        "src"
+      ],
         "psr-4": {
             "\\AGHQ\\RservePHPLaravel\\": "./src/"
         }
@@ -19,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "AGHQ\\RservePHPLaravel\\Providers\\RservePHPLaravelServiceProvider"
+                "\\AGHQ\\RservePHPLaravel\\Providers\\RservePHPLaravelServiceProvider"
             ]
         }
     }
