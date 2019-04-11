@@ -1,6 +1,6 @@
 <?php
 
-namespace AGHQ\RservePHPLaravel;
+namespace AGHQ\RservePHPLaravel\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Sentiweb\Rserve\Connection;
