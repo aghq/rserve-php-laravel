@@ -3,7 +3,7 @@
     "description": "A laravel-friendly way to integrate cturbelin/rserve-php",
     "type": "library",
     "require": {
-        "cturbelin/rserve-php": "^1.0"
+        "cturbelin/rserve-php": "dev-master"
     },
     "authors": [
         {
