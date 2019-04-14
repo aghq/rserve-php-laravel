@@ -19,6 +19,6 @@ class RservePHPLaravel
     }
 
     public function doSomething() {
-        return false;
+        return true;
     }
 }
