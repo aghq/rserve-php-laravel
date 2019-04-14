@@ -2,6 +2,8 @@
 
 namespace AGHQ\RservePHPLaravel\Providers;
 
+use AGHQ\RservePHPLaravel\R;
+use AGHQ\RservePHPLaravel\RservePHPLaravel;
 use Illuminate\Support\ServiceProvider;
 use Sentiweb\Rserve\Connection;
 
@@ -33,7 +35,7 @@ class RservePHPLaravelServiceProvider extends ServiceProvider
             return new RservePHPLaravel($connection);
         });
 
-        $this->app->alias(RservePHPLaravel::class, 'rserve-php');
+        $this->app->alias(R::class, 'rserve-php');
     }
 
     /**
