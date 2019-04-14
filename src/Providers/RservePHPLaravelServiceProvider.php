@@ -35,7 +35,7 @@ class RservePHPLaravelServiceProvider extends ServiceProvider
             return new RservePHPLaravel($connection);
         });
 
-        $this->app->alias(R::class, 'rserve-php');
+        $this->app->alias(RservePHPLaravel::class, 'rserve-php');
     }
 
     /**

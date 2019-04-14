@@ -1,6 +1,6 @@
 <?php
 
-namespace AGHQ\RservePHPLaravel;
+namespace AGHQ\RservePHPLaravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -17,4 +17,8 @@ class RservePHPLaravel
         $this->config = config('rserve-php-laravel.config'); // or something
         $this->connection = $connection;
     }
+
+    public function doSomething() {
+        return false;
+    }
 }
