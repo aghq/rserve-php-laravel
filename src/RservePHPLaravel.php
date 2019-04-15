@@ -21,4 +21,8 @@ class RservePHPLaravel
     public function doSomething() {
         return true;
     }
+
+    public function execute($rString) {
+        return $this->connection->evalString($rString);
+    }
 }
