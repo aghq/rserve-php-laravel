@@ -2,12 +2,12 @@
 
 namespace AGHQ\RservePHPLaravel\Providers;
 
-use AGHQ\RservePHPLaravel\R;
 use AGHQ\RservePHPLaravel\RservePHPLaravel;
+use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 use Sentiweb\Rserve\Connection;
 
-class RservePHPLaravelServiceProvider extends ServiceProvider
+class RservePHPLaravelServiceProvider extends ServiceProvider implements DeferrableProvider
 {
     /**
      * Register services.
@@ -38,13 +38,8 @@ class RservePHPLaravelServiceProvider extends ServiceProvider
         $this->app->alias(RservePHPLaravel::class, 'rserve-php');
     }
 
-    /**
-     * Bootstrap services.
-     *
-     * @return void
-     */
-    public function boot()
+    public function provides()
     {
-        $something = true;
+        return [RservePHPLaravel::class];
     }
 }
