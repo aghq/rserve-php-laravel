@@ -17,14 +17,10 @@ class RservePHPLaravelServiceProvider extends ServiceProvider implements Deferra
     public function register()
     {
         $this->app->singleton(RservePHPLaravel::class, function() {
-            // @FIXME: hook up to an actual config
-            $username = "rserve";
-            $password = "rserve";
-            $host = "rserve";
-            $port = 6311;
-
-            // @FIXME: not sure this is something we want to do on boot; refactor to make it only
-            // happen when R-related functionality is needed?
+            $username = config('rserve.user' , "rserve");
+            $password = config('rserve.pass' , "rserve");
+            $host = config('rserve.host' , "rserve");
+            $port = config('rserve.port' , 6311);
             $connection = new Connection($host,
                 $port,
                 [
