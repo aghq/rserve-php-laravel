@@ -13,9 +13,8 @@ class RservePHPLaravelPublishProvider extends ServiceProvider
     public function register() {}
 
     public function boot() {
-        // @TODO: this doesnt seem to publish
         $this->publishes([
-            __DIR__ . '/../../config/rserve-php.php' => config_path('rserve-php.php'),
+            __DIR__ . '/../../config/rserve.php'  => config_path('rserve.php'),
         ]);
     }
 }
