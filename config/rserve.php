@@ -3,6 +3,6 @@
 return [
     'user' => 'rserve',
     'pass' => 'rserve',
-    'host' => 'reserve',
+    'host' => 'rserve',
     'port' => 6311,
 ];
