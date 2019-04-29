@@ -14,11 +14,12 @@ class RservePHPLaravel
 
     public function __construct(Connection $connection)
     {
-        $this->config = config('rserve-php-laravel.config'); // or something
         $this->connection = $connection;
     }
 
     public function execute($rString) {
+        // @TODO: consider forking the Rserve lib and apply contract(s)
+        // We have no guarantee that the Connection would implement this method.
         return $this->connection->evalString($rString);
     }
 }
